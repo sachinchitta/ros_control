@@ -132,7 +132,8 @@ protected:
     return true;
   }
 
-  virtual std::string getHardwareInterfaceType() const
+  /// Get the name of this controller's hardware interface type
+  std::string getHardwareInterfaceType() const
   {
     return hardware_interface::internal::demangledTypeName<T>();
   }

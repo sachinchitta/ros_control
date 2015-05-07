@@ -126,9 +126,6 @@ public:
   /** \name Non Real-Time Safe Functions
    *\{*/
 
-  /// Get the name of this controller's hardware interface type
-  virtual std::string getHardwareInterfaceType() const = 0;
-
   typedef std::vector<hardware_interface::InterfaceResources> ClaimedResourcesType;
 
   /** \brief Request that the controller be initialized
